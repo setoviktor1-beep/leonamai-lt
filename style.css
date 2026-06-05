@@ -607,6 +607,11 @@ nav a:hover {
     box-shadow: 0 10px 20px rgba(15, 118, 110, 0.35);
 }
 
+.muted-contact {
+    color: #cbd5e1;
+    margin-left: 0.35rem;
+}
+
 .contact-form {
     background: var(--white);
     padding: 2.5rem;
@@ -734,11 +739,20 @@ footer {
 @media (max-width: 768px) {
     nav {
         display: none;
-        /* Implementation note: Mobile menu toggle would go here */
     }
 
     .header-content {
         height: 68px;
+    }
+
+    .logo {
+        font-size: 1.25rem;
+    }
+
+    .nav-btn {
+        display: inline-block;
+        padding: 0.65rem 0.9rem;
+        font-size: 0.9rem;
     }
 
     .hero {
@@ -784,7 +798,12 @@ footer {
     }
 
     .carousel-track {
-        height: 300px;
+        height: 280px;
+    }
+
+    .carousel-slide {
+        object-fit: contain;
+        background: #0f172a;
     }
 
     .carousel-btn {
@@ -801,7 +820,13 @@ footer {
     }
 
     .floating-contact {
-        display: inline-flex;
+        display: none;
+    }
+
+    .muted-contact {
+        display: block;
+        margin-left: 0;
+        margin-top: 0.3rem;
     }
 }
 
