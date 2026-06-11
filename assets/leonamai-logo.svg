@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="Leonamai.lt logo">
+  <rect width="96" height="96" rx="12" fill="#f7f2ea"/>
+  <path d="M20 56V34l28-18 28 18v42H57V49H39v27H20V56Z" fill="none" stroke="#173b31" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M48 16l28 18v42" fill="none" stroke="#c97a42" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M32 76h48" stroke="#173b31" stroke-width="7" stroke-linecap="round"/>
+</svg>
