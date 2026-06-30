@@ -1,4 +1,17 @@
 ﻿document.addEventListener('DOMContentLoaded', () => {
+    const emailLinks = document.querySelectorAll('[data-email-user][data-email-domain]');
+    emailLinks.forEach((link) => {
+        const email = `${link.dataset.emailUser}@${link.dataset.emailDomain}`;
+        link.href = `mailto:${email}`;
+        link.textContent = email;
+    });
+
+    const contactForms = document.querySelectorAll('form[data-form-user][data-form-domain]');
+    contactForms.forEach((form) => {
+        const email = `${form.dataset.formUser}@${form.dataset.formDomain}`;
+        form.action = `https://formsubmit.co/${email}`;
+    });
+
     // Lightbox for gallery images and active carousel photo
     const zoomableImages = document.querySelectorAll('.gallery-item img, .carousel-slide');
 

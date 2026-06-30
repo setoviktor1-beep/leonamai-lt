@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Vonios remontas Lentvaryje, Vilniuje ir Trakuose | Leonamai</title>
-  <meta name="description" content="Leonamai atlieka vonios remontą, plytelių klijavimą, gipskartonio montavimą, dažymą ir buto apdailą Lentvaryje, Vilniuje, Trakuose ir Vilniaus regione." />
+  <meta name="description" content="Vonios remontas, plytelių klijavimas, buto ir virtuvės apdaila Lentvaryje, Vilniuje, Trakuose ir Vilniaus regione. Aiški darbų apimtis, sąmata ir tvarkingas užbaigimas." />
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <meta name="author" content="Leonamai" />
   <meta name="theme-color" content="#111111" />
@@ -26,39 +26,78 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "HomeAndConstructionBusiness",
-    "@id": "https://leonamai.lt/#business",
-    "name": "Leonamai",
-    "url": "https://leonamai.lt/",
-    "image": "https://leonamai.lt/assets/project-classic-bathroom.jpg",
-    "logo": "https://leonamai.lt/assets/leonamai-logo.svg",
-    "telephone": "+37063601230",
-    "email": "Valentinleonavicius@gmail.com",
-    "priceRange": "$$",
-    "description": "Leonamai atlieka vonios remontą, plytelių klijavimą, hidroizoliaciją, gipskartonio montavimą, dažymą, buto apdailą ir smulkius statybos darbus Lentvaryje, Vilniuje, Trakuose ir Vilniaus regione.",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Lentvaris",
-      "addressCountry": "LT"
-    },
-    "areaServed": [
-      { "@type": "City", "name": "Lentvaris" },
-      { "@type": "City", "name": "Vilnius" },
-      { "@type": "City", "name": "Trakai" },
-      { "@type": "AdministrativeArea", "name": "Vilniaus regionas" }
-    ],
-    "serviceType": [
-      "Vonios remontas",
-      "Plytelių klijavimas",
-      "Hidroizoliacija",
-      "Gipskartonio montavimas",
-      "Dažymas",
-      "Buto apdaila",
-      "Smulkūs statybos darbai",
-      "Namų priežiūros darbai"
-    ],
-    "sameAs": [
-      "https://www.facebook.com/valentin.leonavicius"
+    "@graph": [
+      {
+        "@type": "HomeAndConstructionBusiness",
+        "@id": "https://leonamai.lt/#business",
+        "name": "Leonamai",
+        "url": "https://leonamai.lt/",
+        "image": "https://leonamai.lt/assets/project-classic-bathroom.jpg",
+        "logo": "https://leonamai.lt/assets/leonamai-logo.svg",
+        "telephone": "+37063601230",
+        "priceRange": "$$",
+        "description": "Leonamai atlieka vonios remontą, plytelių klijavimą, hidroizoliaciją, gipskartonio montavimą, dažymą, buto apdailą ir smulkius statybos darbus Lentvaryje, Vilniuje, Trakuose ir Vilniaus regione.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Lentvaris",
+          "addressRegion": "Vilniaus apskritis",
+          "addressCountry": "LT"
+        },
+        "areaServed": [
+          { "@type": "City", "name": "Lentvaris" },
+          { "@type": "City", "name": "Vilnius" },
+          { "@type": "City", "name": "Trakai" },
+          { "@type": "AdministrativeArea", "name": "Vilniaus rajonas" },
+          { "@type": "AdministrativeArea", "name": "Vilniaus regionas" }
+        ],
+        "knowsAbout": [
+          "Vonios remontas",
+          "Plytelių klijavimas",
+          "Hidroizoliacija",
+          "Buto apdaila",
+          "Virtuvės paruošimas",
+          "Smulkūs statybos darbai"
+        ],
+        "sameAs": [
+          "https://www.facebook.com/valentin.leonavicius"
+        ]
+      },
+      {
+        "@type": "Service",
+        "@id": "https://leonamai.lt/#bathroom-renovation-service",
+        "name": "Vonios remontas, plytelių klijavimas ir buto apdaila",
+        "provider": { "@id": "https://leonamai.lt/#business" },
+        "areaServed": [
+          "Lentvaris",
+          "Vilnius",
+          "Trakai",
+          "Vilniaus rajonas",
+          "Vilniaus regionas"
+        ],
+        "serviceType": [
+          "Vonios remontas",
+          "Plytelių klijavimas",
+          "Hidroizoliacija",
+          "Gipskartonio montavimas",
+          "Dažymas",
+          "Buto apdaila",
+          "Virtuvės paruošimas",
+          "Smulkūs statybos darbai"
+        ],
+        "description": "Remonto ir apdailos paslaugos Lentvaryje, Vilniuje, Trakuose ir Vilniaus regione. Orientacinei sąmatai pakanka 3-6 objekto nuotraukų arba trumpo video, patalpos dydžio ir darbų apimties aprašymo."
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://leonamai.lt/#breadcrumbs",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Leonamai.lt",
+            "item": "https://leonamai.lt/"
+          }
+        ]
+      }
     ]
   }
   </script>
@@ -73,6 +112,134 @@
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "Taip. Leonamai atlieka vonios paruošimą, hidroizoliaciją, plytelių klijavimą, santechnikos taškų paruošimą, dušo zonos įrengimą ir montavimo darbus."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kiek kainuoja vonios remontas Lentvaryje?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Vonios remonto kaina Lentvaryje priklauso nuo patalpos dydžio, demontavimo, hidroizoliacijos, plytelių, santechnikos taškų ir pasirinktų medžiagų. Orientacinei kainai pakanka 3-6 nuotraukų arba trumpo video, bet tikslesnei sąmatai reikia aiškios darbų apimties arba apžiūros."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kiek kainuoja plytelių klijavimas Vilniuje?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Plytelių klijavimo kaina Vilniuje priklauso nuo pagrindo paruošimo, plytelių formato, kampų, nišų, nuolydžių ir siūlių sudėtingumo. Tikslesniam įvertinimui naudinga atsiųsti patalpos plotą, plytelių dydį, nuotraukas ir informaciją, ar reikės hidroizoliacijos."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Ar darote hidroizoliaciją prieš klijuojant plyteles?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Taip. Vonios kambaryje hidroizoliacija yra svarbi darbo dalis prieš plytelių klijavimą, ypač dušo zonoje, prie grindų ir sienų jungčių. Prieš pradedant darbus įvertiname pagrindą, drėgnas zonas ir mazgus, nuo kurių priklauso ilgalaikis rezultatas."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Ar galite suremontuoti tik dušo zoną?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Taip, galime atlikti dalinį vonios remontą arba sutvarkyti tik dušo zoną. Tokiu atveju pirmiausia įvertiname esamą hidroizoliaciją, plytelių būklę, nuolydžius ir santechnikos taškus, kad sprendimas nebūtų tik kosmetinis."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Ar kaina gali būti pasakyta iš nuotraukų?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Iš nuotraukų galima pateikti orientacinę kainą. Tikslesnei sąmatai reikia aiškios darbų apimties, patalpos dydžio, objekto vietos ir informacijos, ar į kainą turi įeiti medžiagos, šiukšlių išvežimas ir pilnas užbaigimas."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Ar dirbate su medžiagomis?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Galime padėti su medžiagų kiekiais ir praktiškais pasirinkimais. Ar medžiagos įeina į kainą, sutariame prieš pradedant darbus, kad būtų aišku, kas perka plyteles, klijus, glaistus, hidroizoliaciją ir montavimo priedus."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Ar dirbate su kliento medžiagomis?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Taip, galime dirbti su kliento nupirktomis medžiagomis. Prieš pradedant verta patikrinti kiekius, plytelių formatą, klijus, glaistus, hidroizoliaciją ir kitus priedus, kad darbai nestotų dėl trūkstamų arba netinkamų medžiagų."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Ar galite padėti apskaičiuoti plytelių kiekį?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Taip, galime padėti apskaičiuoti orientacinį plytelių kiekį pagal patalpos matmenis, sienų aukštį, grindų plotą ir pasirinktą plytelių formatą. Paprastai verta numatyti rezervą pjovimui, brokui, nišoms, kampams ir galimam remontui ateityje."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kiek laiko trunka vonios remontas?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Vonios remonto trukmė priklauso nuo darbų apimties, demontavimo, pagrindo būklės, hidroizoliacijos džiūvimo, plytelių kiekio ir įrangos montavimo. Mažesni darbai gali trukti trumpiau, o pilnam remontui reikia suplanuoti etapų seką ir medžiagų pristatymą."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Nuo ko pradėti vonios remontą?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Vonios remontą verta pradėti nuo aiškios darbų apimties: ką reikia demontuoti, kur bus santechnikos taškai, kokios plytelės, ar reikės elektros ir kokia įranga bus montuojama. Greičiausia pradžia yra atsiųsti nuotraukas, matmenis ir norimą rezultatą."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Ar galite atlikti smulkius apdailos darbus kartu su vonios remontu?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Taip, kartu su vonios remontu galime sutvarkyti ir smulkius apdailos darbus: sienų pataisymus, gipskartonio mazgus, grindjuostes, dažymą, nišas ar kitus paruošimus. Tai patogu, kai norisi vienu kartu užbaigti kelias susijusias zonas."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Ar dirbate Trakuose?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Taip, dirbame Trakuose ir aplinkinėse vietovėse. Atliekame vonios remontą, plytelių klijavimą, buto apdailą, virtuvės paruošimą ir smulkius statybos darbus. Dėl konkretaus objekto patogiausia susisiekti telefonu ir atsiųsti kelias nuotraukas."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Ar dirbate Vilniaus rajone?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Taip, dirbame Vilniaus rajone ir Vilniaus regione. Dažniausiai vertiname objektus pagal vietą, darbų apimtį, terminus ir nuotraukas. Jei objektas toliau nuo Lentvario, Vilniaus ar Trakų, dėl atvykimo galima tartis individualiai."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Ar galite atvykti apžiūrai?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Taip, dėl apžiūros galima tartis telefonu. Prieš atvykstant naudinga atsiųsti nuotraukas arba trumpą video, objekto vietą, patalpos dydį ir norimų darbų aprašymą. Taip apžiūra būna tikslesnė ir lengviau pasiruošti sąmatai."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Ką atsiųsti, kad gautumėte tikslesnę sąmatą?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Tikslesnei sąmatai atsiųskite 3-6 objekto nuotraukas arba trumpą video, patalpos dydį, vietą, norimų darbų sąrašą ir informaciją apie medžiagas. Taip galima greičiau suprasti darbų apimtį, rizikas ir klausimus, kuriuos dar reikia patikslinti."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kada verta keisti visą vonią, o kada užtenka dalinio remonto?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dalinis remontas tinka, kai problema aiški ir pagrindiniai mazgai yra tvarkingi. Pilnas vonios remontas dažniau reikalingas, kai prasta hidroizoliacija, netinkami nuolydžiai, seni santechnikos taškai, pažeistos plytelės arba planuojamas naujas išdėstymas."
         }
       },
       {
@@ -100,7 +267,10 @@
     </a>
     <nav aria-label="Pagrindinė navigacija">
       <a href="#paslaugos">Paslaugos</a>
+      <a href="vonios-remontas-vilnius/">Vonios remontas</a>
+      <a href="plyteliu-klijavimas-vilnius/">Plytelės</a>
       <a href="#darbai">Darbai</a>
+      <a href="gallery.html">Galerija</a>
       <a href="#procesas">Procesas</a>
       <a href="#duk">DUK</a>
       <a class="nav-cta" href="#kontaktai">Kontaktai</a>
@@ -123,6 +293,7 @@
         <p class="lead">Nuo pirmos apžiūros iki užbaigimo. Aiškiai sutariame darbų apimtį, kainą, medžiagas, terminus ir kas už ką atsakingas.</p>
         <div class="actions">
           <a class="button" href="tel:+37063601230">Skambinti: 0636 01230</a>
+          <a class="button whatsapp" href="https://wa.me/37063601230?text=Sveiki,%20domina%20vonios%20remontas.%20Nor%C4%97%C4%8Diau%20gauti%20s%C4%85mat%C4%85." target="_blank" rel="noopener noreferrer">Rašyti WhatsApp</a>
           <a class="button secondary" href="#kontaktai">Gauti sąmatą</a>
         </div>
         <p class="hero-note">Greičiausia pradžia: atsiųskite 3-6 nuotraukas arba trumpą video ir parašykite objekto vietą.</p>
@@ -142,6 +313,21 @@
       <p>Leonamai.lt skirta žmonėms, kuriems reikia patikimo meistro Lentvaryje, Vilniuje, Trakuose ir aplink. Padėsime įvertinti būklę, sudėlioti darbus pagal prioritetus ir rasti praktišką sprendimą pagal biudžetą.</p>
     </section>
 
+    <section class="section about">
+      <div class="section-title">
+        <p class="eyebrow">Apie Leonamai.lt</p>
+        <h2>Remonto ir apdailos darbai Vilniaus regione</h2>
+      </div>
+      <div class="about-grid">
+        <p>Leonamai.lt — remonto ir apdailos darbų paslauga Lentvaryje, Vilniuje, Trakuose ir Vilniaus regione. Pagrindinės paslaugos: vonios remontas, plytelių klijavimas, hidroizoliacija, buto apdaila, virtuvės paruošimas ir smulkūs statybos darbai.</p>
+        <ul class="fact-list">
+          <li><strong>Aptarnaujamos vietos:</strong> Lentvaris, Vilnius, Trakai, Vilniaus rajonas ir Vilniaus regionas.</li>
+          <li><strong>Sąmatos pradžiai:</strong> užtenka 3-6 objekto nuotraukų arba trumpo video, patalpos dydžio ir darbų apimties aprašymo.</li>
+          <li><strong>Darbų eiga:</strong> pirma įvertinama apimtis, medžiagos ir rizikos, tada sutariama kaina, terminai ir atsakomybės.</li>
+        </ul>
+      </div>
+    </section>
+
     <section id="paslaugos" class="section services">
       <div class="section-title">
         <p class="eyebrow">Paslaugos</p>
@@ -152,11 +338,14 @@
           <span>1</span>
           <h3>Vonios remontas Lentvaryje ir Vilniuje</h3>
           <p>Demontavimas, hidroizoliacija, plytelės, dušo zonos, santechnikos taškai, baldų ir įrangos montavimas.</p>
+          <a class="card-link" href="vonios-remontas-vilnius/">Vonios remontas Vilniuje</a>
+          <a class="card-link" href="vonios-remontas-lentvaris/">Vonios remontas Lentvaryje</a>
         </article>
         <article>
           <span>2</span>
           <h3>Buto apdaila ir remontas</h3>
           <p>Sienų, grindų ir lubų paruošimas, gipskartonis, dažymas, grindų dangos, durys ir grindjuostės.</p>
+          <a class="card-link" href="buto-apdaila-vilnius/">Buto apdaila Vilniuje</a>
         </article>
         <article>
           <span>3</span>
@@ -167,6 +356,7 @@
           <span>4</span>
           <h3>Plytelių klijavimas</h3>
           <p>Tikslūs kampai, siūlės, nuolydžiai ir mazgai, nuo kurių priklauso ilgaamžiškas rezultatas.</p>
+          <a class="card-link" href="plyteliu-klijavimas-vilnius/">Plytelių klijavimas Vilniuje</a>
         </article>
         <article>
           <span>5</span>
@@ -298,6 +488,7 @@
         </article>
       </div>
       <p class="note">Galerijoje rodome realius užbaigtus darbus: vonias, grindis, virtuvės zonas, pirties ir interjero apdailą.</p>
+      <a class="text-link" href="gallery.html">Peržiūrėti pilną darbų galeriją</a>
     </section>
 
     <section id="procesas" class="section process">
@@ -324,12 +515,68 @@
           <p>Taip. Vonios yra vienas pagrindinių darbų: paruošimas, hidroizoliacija, plytelės, santechnikos taškai, dušo zona ir montavimas.</p>
         </details>
         <details>
+          <summary>Kiek kainuoja vonios remontas Lentvaryje?</summary>
+          <p>Vonios remonto kaina Lentvaryje priklauso nuo patalpos dydžio, demontavimo, hidroizoliacijos, plytelių, santechnikos taškų ir pasirinktų medžiagų. Orientacijai pakanka 3-6 nuotraukų arba trumpo video, bet tikslesnei sąmatai reikia aiškios darbų apimties arba apžiūros.</p>
+        </details>
+        <details>
+          <summary>Kiek kainuoja plytelių klijavimas Vilniuje?</summary>
+          <p>Plytelių klijavimo kaina Vilniuje priklauso nuo pagrindo paruošimo, plytelių formato, kampų, nišų, nuolydžių ir siūlių sudėtingumo. Tikslesniam įvertinimui naudinga atsiųsti patalpos plotą, plytelių dydį, nuotraukas ir informaciją, ar reikės hidroizoliacijos.</p>
+        </details>
+        <details>
+          <summary>Ar darote hidroizoliaciją prieš klijuojant plyteles?</summary>
+          <p>Taip. Vonios kambaryje hidroizoliacija yra svarbi darbo dalis prieš plytelių klijavimą, ypač dušo zonoje, prie grindų ir sienų jungčių. Prieš pradedant darbus įvertiname pagrindą, drėgnas zonas ir mazgus.</p>
+        </details>
+        <details>
+          <summary>Ar galite suremontuoti tik dušo zoną?</summary>
+          <p>Taip, galime atlikti dalinį vonios remontą arba sutvarkyti tik dušo zoną. Tokiu atveju pirmiausia įvertiname esamą hidroizoliaciją, plytelių būklę, nuolydžius ir santechnikos taškus, kad sprendimas nebūtų tik kosmetinis.</p>
+        </details>
+        <details>
           <summary>Ar kaina gali būti pasakyta iš nuotraukų?</summary>
           <p>Iš nuotraukų galima duoti orientaciją. Tikslesnei sąmatai reikia aiškios darbų apimties arba apžiūros.</p>
         </details>
         <details>
           <summary>Ar dirbate su medžiagomis?</summary>
           <p>Galime padėti su kiekiais ir praktiškais pasirinkimais. Ar medžiagos įeina į kainą, sutariame prieš pradedant darbus.</p>
+        </details>
+        <details>
+          <summary>Ar dirbate su kliento medžiagomis?</summary>
+          <p>Taip, galime dirbti su kliento nupirktomis medžiagomis. Prieš pradedant verta patikrinti kiekius, plytelių formatą, klijus, glaistus, hidroizoliaciją ir kitus priedus, kad darbai nestotų dėl trūkstamų arba netinkamų medžiagų.</p>
+        </details>
+        <details>
+          <summary>Ar galite padėti apskaičiuoti plytelių kiekį?</summary>
+          <p>Taip, galime padėti apskaičiuoti orientacinį plytelių kiekį pagal patalpos matmenis, sienų aukštį, grindų plotą ir pasirinktą plytelių formatą. Paprastai verta numatyti rezervą pjovimui, brokui, nišoms, kampams ir galimam remontui ateityje.</p>
+        </details>
+        <details>
+          <summary>Kiek laiko trunka vonios remontas?</summary>
+          <p>Vonios remonto trukmė priklauso nuo darbų apimties, demontavimo, pagrindo būklės, hidroizoliacijos džiūvimo, plytelių kiekio ir įrangos montavimo. Mažesni darbai gali trukti trumpiau, o pilnam remontui reikia suplanuoti etapų seką.</p>
+        </details>
+        <details>
+          <summary>Nuo ko pradėti vonios remontą?</summary>
+          <p>Vonios remontą verta pradėti nuo aiškios darbų apimties: ką reikia demontuoti, kur bus santechnikos taškai, kokios plytelės, ar reikės elektros ir kokia įranga bus montuojama. Greičiausia pradžia yra atsiųsti nuotraukas, matmenis ir norimą rezultatą.</p>
+        </details>
+        <details>
+          <summary>Ar galite atlikti smulkius apdailos darbus kartu su vonios remontu?</summary>
+          <p>Taip, kartu su vonios remontu galime sutvarkyti ir smulkius apdailos darbus: sienų pataisymus, gipskartonio mazgus, grindjuostes, dažymą, nišas ar kitus paruošimus. Tai patogu, kai norisi vienu kartu užbaigti kelias susijusias zonas.</p>
+        </details>
+        <details>
+          <summary>Ar dirbate Trakuose?</summary>
+          <p>Taip, dirbame Trakuose ir aplinkinėse vietovėse. Atliekame vonios remontą, plytelių klijavimą, buto apdailą, virtuvės paruošimą ir smulkius statybos darbus. Dėl konkretaus objekto patogiausia susisiekti telefonu ir atsiųsti kelias nuotraukas.</p>
+        </details>
+        <details>
+          <summary>Ar dirbate Vilniaus rajone?</summary>
+          <p>Taip, dirbame Vilniaus rajone ir Vilniaus regione. Dažniausiai vertiname objektus pagal vietą, darbų apimtį, terminus ir nuotraukas. Jei objektas toliau nuo Lentvario, Vilniaus ar Trakų, dėl atvykimo galima tartis individualiai.</p>
+        </details>
+        <details>
+          <summary>Ar galite atvykti apžiūrai?</summary>
+          <p>Taip, dėl apžiūros galima tartis telefonu. Prieš atvykstant naudinga atsiųsti nuotraukas arba trumpą video, objekto vietą, patalpos dydį ir norimų darbų aprašymą. Taip apžiūra būna tikslesnė ir lengviau pasiruošti sąmatai.</p>
+        </details>
+        <details>
+          <summary>Ką atsiųsti, kad gautumėte tikslesnę sąmatą?</summary>
+          <p>Tikslesnei sąmatai atsiųskite 3-6 objekto nuotraukas arba trumpą video, patalpos dydį, vietą, norimų darbų sąrašą ir informaciją apie medžiagas. Taip galima greičiau suprasti darbų apimtį, rizikas ir klausimus, kuriuos dar reikia patikslinti.</p>
+        </details>
+        <details>
+          <summary>Kada verta keisti visą vonią, o kada užtenka dalinio remonto?</summary>
+          <p>Dalinis remontas tinka, kai problema aiški ir pagrindiniai mazgai yra tvarkingi. Pilnas vonios remontas dažniau reikalingas, kai prasta hidroizoliacija, netinkami nuolydžiai, seni santechnikos taškai, pažeistos plytelės arba planuojamas naujas išdėstymas.</p>
         </details>
         <details>
           <summary>Kokiose vietose dirbate?</summary>
@@ -346,14 +593,16 @@
       </div>
       <address>
         <strong>Valentin</strong>
-        <a href="tel:+37063601230">0636 01230</a>
-        <a class="email-link" href="mailto:Valentinleonavicius@gmail.com">Valentinleonavicius@gmail.com</a>
+          <a href="tel:+37063601230">0636 01230</a>
+        <a class="whatsapp-link" href="https://wa.me/37063601230?text=Sveiki,%20domina%20remonto%20darbai.%20Nor%C4%97%C4%8Diau%20gauti%20s%C4%85mat%C4%85." target="_blank" rel="noopener noreferrer">Rašyti WhatsApp</a>
+        <a class="email-link" href="#" data-email-user="Valentinleonavicius" data-email-domain="gmail.com">El. paštas</a>
         <span>Vilnius, Lentvaris, Trakai ir Vilniaus regionas</span>
       </address>
-      <form class="contact-form" action="https://formsubmit.co/Valentinleonavicius@gmail.com" method="POST" accept-charset="UTF-8">
+      <form class="contact-form" action="#" method="POST" accept-charset="UTF-8" data-form-user="Valentinleonavicius" data-form-domain="gmail.com">
         <input type="hidden" name="_subject" value="Nauja užklausa iš Leonamai.lt" />
         <input type="hidden" name="_captcha" value="false" />
         <input type="hidden" name="_template" value="table" />
+        <input type="text" name="_honey" class="honey-field" tabindex="-1" autocomplete="off" aria-hidden="true" />
         <label>
           Vardas
           <input type="text" name="name" autocomplete="name" required />
@@ -375,5 +624,6 @@
     <span>© Leonamai.lt</span>
     <span>Remonto ir apdailos darbai Vilniaus regione</span>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
