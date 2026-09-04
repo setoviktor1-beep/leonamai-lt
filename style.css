@@ -504,17 +504,85 @@ nav a:hover {
     transform: scale(1.22);
 }
 
-.gallery-grid {
+.gallery-page {
+    padding-bottom: 4rem;
+    background: var(--soft);
+}
+
+.gallery-projects {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 1.5rem;
+    gap: 2rem;
+}
+
+.gallery-project {
+    padding: clamp(1.1rem, 2.5vw, 2rem);
+    border: 1px solid #e2e8f0;
+    border-radius: calc(var(--radius) + 4px);
+    background: var(--white);
+    box-shadow: var(--shadow);
+}
+
+.gallery-project-featured {
+    border-color: rgba(15, 118, 110, 0.32);
+    box-shadow: 0 16px 42px rgba(15, 118, 110, 0.12);
+}
+
+.gallery-project-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+}
+
+.gallery-project-label {
+    display: block;
+    margin-bottom: 0.35rem;
+    color: var(--primary);
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.gallery-project h2 {
+    color: var(--dark);
+    font-size: clamp(1.25rem, 2.4vw, 1.7rem);
+    line-height: 1.2;
+}
+
+.gallery-project-count {
+    flex: 0 0 auto;
+    padding: 0.42rem 0.7rem;
+    border-radius: 999px;
+    background: #e0f2f1;
+    color: var(--primary);
+    font-size: 0.82rem;
+    font-weight: 700;
+}
+
+.gallery-project-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.gallery-project-grid.cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.gallery-project-grid.cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.gallery-project-grid.cols-1 {
+    grid-template-columns: minmax(0, 520px);
 }
 
 .gallery-item {
+    aspect-ratio: 4 / 3;
     border-radius: var(--radius);
     overflow: hidden;
-    height: 300px;
-    /* Fixed height for consistency */
+    background: #e2e8f0;
     box-shadow: var(--shadow);
 }
 
@@ -815,6 +883,17 @@ footer {
         grid-template-columns: 1fr;
     }
 
+    .gallery-project-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .gallery-project-grid.cols-3,
+    .gallery-project-grid.cols-2,
+    .gallery-project-grid.cols-1 {
+        grid-template-columns: 1fr;
+    }
+
     .contact-form {
         padding: 1.5rem;
     }
@@ -874,7 +953,6 @@ html {
     cursor: pointer;
     line-height: 1;
 }
-
 
 
 
